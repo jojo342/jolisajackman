@@ -1,0 +1,149 @@
+body{
+  min-height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+  font-size: 18px;
+  cursor:default;
+}
+
+/* site wrapper */
+.wrapper{
+  display: grid;
+  grid-template-columns: 23vw auto 23vw;
+  grid-template-rows: 15vh 15vh 70vh;
+}
+
+/* temp colors for grid visibility */
+.tempGridColor{
+  /* background-color: #ffffff; */
+}
+
+.tempGridColor2{
+    /* background-color: #ffffff; */
+}
+
+/* navigation - bold logo and active page  */
+.bold{
+  font-weight: 600;
+}
+
+/* navigation grid */
+nav{
+  display: grid;
+  grid-template-columns:50% auto auto auto auto;
+}
+
+/* nav mouseover highlight effect */
+nav > span:not(.bold):hover{
+  color:rgb(0,0,0);
+}
+
+nav > span:not(.bold){
+  color:rgba(0,0,0,.6);
+}
+
+nav > span{
+  cursor: pointer;
+}
+
+/* vertically align nav */
+nav > span{
+  line-height: 20vh;
+}
+
+/* align nav to the right */
+nav > span:not(.logo){
+  text-align: right;
+}
+
+.main *, p{
+  margin:0;
+  box-sizing: border-box;
+}
+
+h1{
+font-weight: 600;
+font-size: 52px;
+line-height: 78px;
+text-transform: capitalize;
+box-sizing: border-box;
+}
+
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+:root {
+  --white-text: #ffffff;
+  --shadow: 1px 1px 1px #000, 0 -1px 1px #000, 1px 1px 1px #000, -1px 0 0 #000, 1px 1px 0 #000, 1px 0 0 #000, 0 -1px 0 #000;
+}
+
+.yellow-highlight:hover{
+  background:none;
+  color: var(--white-text);
+  text-shadow: var(--shadow);
+}
+.yellow-highlight{
+  background: #fffaa3;
+}
+
+.green-highlight:hover{
+  background: #cefe9d;
+  color:#000000;
+  text-shadow: none;
+}
+
+.green-highlight{
+  color: var(--white-text);
+  text-shadow: var(--shadow);
+}
+
+.pink-highlight:hover{
+  background: #fdbcf7;
+  color:#000000;
+  text-shadow: none;
+}
+
+.pink-highlight{
+  color: var(--white-text);
+  text-shadow: var(--shadow);
+}
+
+.blue-highlight:hover{
+  background: #a0ecff;
+  color:#000000;
+  text-shadow: none;
+}
+
+.blue-highlight{
+  color: var(--white-text);
+  text-shadow: var(--shadow);
+}
+
+.orange-highlight:hover{
+  background: #ffd28a;
+  color:#000000;
+  text-shadow: none;
+}
+
+.orange-highlight{
+  color: var(--white-text);
+  text-shadow: var(--shadow);
+}
+
+.main > p {
+  padding-top: 5vh;
+}
+
+p{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 187%;
+}
+
+/* line break to make text more readable on desktop */
+.line-break{
+  display: block;
+}
